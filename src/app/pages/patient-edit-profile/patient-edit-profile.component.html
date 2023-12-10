@@ -1,0 +1,498 @@
+<div class="card">
+  <div class="left-side">
+    <img class="profile-img" src="https://i.imgur.com/fd1uj0T.png" alt="Profile pic">
+    <h4 class="user-type">Patient</h4>
+    <div class="image-upload-div">
+      <div class="image-upload">
+        <label for="ImageUpload">
+          Upload profile picture?
+        </label>
+        <input id="ImageUploadPatient" name="ImageUploadPatient" type="file">
+      </div>
+    </div>
+    <div class="submit">
+      <input class="submit-btn btn btn-primary" id="SubmitPatient" name="SubmitPatient" type="submit" value="Edit">
+    </div>
+  </div>
+
+
+  <div class="right-side">
+    <div>
+      <form>
+        <div class="form-row row-1">
+          <div class="fullname">
+            <label for="FirstNamePatient">First name</label>
+            <input type="text" class="form-control" id="FirstNamePatient" name="FirstNamePatient"
+              placeholder="First name" value="" required>
+          </div>
+          <div class="fullname">
+            <label for="MiddleNamePatient">Middle name</label>
+            <input type="text" class="form-control" id="MiddleNamePatient" name="MiddleNamePatient"
+              placeholder="Middle name" value="" required>
+          </div>
+          <div class="fullname">
+            <label for="LastNamePatient">Last name</label>
+            <input type="text" class="form-control" id="LastNamePatient" name="LastNamePatient" placeholder="Last name"
+              value="" required>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="birth">
+            <label for="BirthdatePatient">Birthdate</label>
+            <input type='date' class="form-control birth-input" name="BirthdatePatient" id="BirthdatePatient" value=""
+              required>
+          </div>
+
+          <div class="gender">
+
+            <label class="form-check-label gender-label" for="gender">Gender</label>
+
+            <div class="form-check male-check">
+              <input class="form-check-input male-check-circle" type="radio" name="MaleGenderPatient"
+                id="MaleGenderPatient">
+              <label class="form-check-label" for="MaleGenderPatient">
+                <img class="gender-icon" src="https://i.imgur.com/7alkg7M.png" alt="Male-icon"> Male
+              </label>
+            </div>
+
+            <div class="form-check female-check">
+              <input class="form-check-input female-check-circle" type="radio" name="FemaleGenderPatient"
+                id="FemaleGenderPatient">
+              <label class="form-check-label" for="FemaleGenderPatient">
+                <img class="gender-icon" src="https://i.imgur.com/31PD7OW.png" alt="Female-icon"> Female
+              </label>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="email">
+            <label for="EmailPatient">Email address</label>
+            <input type="email" class="form-control" id="EmailPatient" name="EmailPatient"
+              placeholder="Name@example.com" value="" required>
+          </div>
+
+          <div class="phone">
+            <label for="NumberPatient">Phone number</label>
+            <input type="tel" class="form-control" id="NumberPatient" name="NumberPatient"
+              pattern="^01[0-2,5]{1}[0-9]{8}$" value="" placeholder="Vodafone/Etisalat/Orange/We" required>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="city">
+            <label for="City">City</label>
+            <select class="form-control" id="City" name="City" required>
+              <option class="disabled-select" value="AllCities" selected="true" disabled>All cities</option>
+              <option value="Alexandria">Alexandria</option>
+              <option value="Aswan">Aswan</option>
+              <option value="Asyut">Asyut</option>
+              <option value="Beheira">Beheira</option>
+              <option value="Beni-Suef">Beni Suef</option>
+              <option value="Cairo">Cairo</option>
+              <option value="Dakahlia">Dakahlia</option>
+              <option value="Damietta">Damietta</option>
+              <option value="Faiyum">Faiyum</option>
+              <option value="Gharbia">Gharbia</option>
+              <option value="Giza">Giza</option>
+              <option value="Ismailia">Ismailia</option>
+              <option value="KafrElSheikh">Kafr El Sheikh</option>
+              <option value="Luxor">Luxor</option>
+              <option value="Matruh">Matruh</option>
+              <option value="Minya">Minya</option>
+              <option value="Monufia">Monufia</option>
+              <option value="NewValley">New Valley</option>
+              <option value="NorthSinai">North Sinai</option>
+              <option value="PortSaid">Port Said</option>
+              <option value="Qalyubia">Qalyubia</option>
+              <option value="Qena">Qena</option>
+              <option value="RedSea ">Red Sea </option>
+              <option value="Sharqia">Sharqia</option>
+              <option value="Sohag">Sohag</option>
+              <option value="SouthSinai">South Sinai</option>
+              <option value="Suez">Suez</option>
+            </select>
+          </div>
+
+          <div class="area">
+            <label for="Area">Area</label>
+            <select class="form-control" id="Area" name="Area" required>
+              <option class="disabled-select" selected="true" disabled>Choose city first</option>
+
+              <option value="Anfoushi">Anfoushi</option>
+              <option value="Asafra">Asafra</option>
+              <option value="Azarita">Azarita</option>
+
+              <option value="Daraw">Daraw</option>
+              <option value="Edfu">Edfu</option>
+              <option value="NewAswan">New Aswan</option>
+
+              <option value="Abnub">Abnub</option>
+              <option value="AbuTig">Abu Tig</option>
+              <option value="Asyut">Asyut</option>
+
+              <option value="Edku">Edku</option>
+              <option value="Damanhur">Damanhur</option>
+              <option value="El Denlengat">El Denlengat</option>
+
+              <option value="Biba">Biba</option>
+              <option value="Ihnasiya">Ihnasiya</option>
+              <option value="NewBeniSuef">New Beni Suef</option>
+
+              <option value="New cairo">New cairo</option>
+              <option value="Nasr city">Nasr city</option>
+              <option value="El Rehab">El Rehab</option>
+              <option value="Zamalek">Zamalek</option>
+              <option value="MasrElGdeda">Masr Elgdeda</option>
+              <option value="El Rehab">Zeitoun</option>
+
+              <option value="Aga">Aga</option>
+              <option value="Bilqas">Bilqas</option>
+              <option value="Damas">Damas</option>
+
+              <option value="DamiRasElBar">Dami Ras El Bar</option>
+              <option value="ElRahamnah">El Rahamnah </option>
+              <option value="Siege of Damietta ">Siege of Damietta </option>
+
+              <option value="Ibsheway">Ibsheway</option>
+              <option value="Sinnuris">Sinnuris</option>
+              <option value="Markaz">Markaz</option>
+
+              <option value="Tanta">Tanta</option>
+              <option value="Kotoor">Kotoor</option>
+              <option value="Basyoun">Basyoun</option>
+
+              <option value="Dokki">Dokki</option>
+              <option value="El-Haram">El-Haram</option>
+              <option value="Agouza">Agouza</option>
+              <option value="El Sheikh Zayed">El Sheikh Zayed</option>
+              <option value="6th of October">6th of October</option>
+              <option value="Bulaq">Bulaq</option>
+
+              <option value="TellElKebir">Tell El Kebir</option>
+              <option value="AbuSuwir">Abu Suwir</option>
+              <option value="Fayid">Fayid</option>
+
+              <option value="Al-Burulus">Al-Burulus</option>
+              <option value="Metoubes">Metoubes</option>
+              <option value="KafrAsh-Shaykh">Kafr ash-Shaykh</option>
+
+              <option value="Qurna">Qurna</option>
+              <option value="Esna">Esna</option>
+              <option value="Tiba">Tiba</option>
+
+              <option value="El Dabaa">El Dabaa</option>
+              <option value="El Alamein">El Alamein</option>
+              <option value="El Alamein">El Alamein</option>
+
+              <option value="New Minya">New Minya</option>
+              <option value="Beni Mazar">Beni Mazar</option>
+              <option value="Deir Mawas">Deir Mawas</option>
+
+              <option value="Shibin El Kom">Shibin El Kom</option>
+              <option value="Menouf">Menouf</option>
+              <option value="Ashmoun">Ashmoun</option>
+
+              <option value="Kharga">Kharga</option>
+              <option value="Balat">Balat</option>
+              <option value="Dakhla">Dakhla</option>
+
+              <option value="El Arish">El Arish</option>
+              <option value="Nekhel">Nekhel</option>
+              <option value="Rafah">Rafah</option>
+
+              <option value="Al-Zohour">Al-Zohour</option>
+              <option value="Al-Dawahy">Al-Dawahy</option>
+              <option value="Al-Sharq">Al-Sharq</option>
+
+              <option value="Qift">Qift</option>
+              <option value="Nag Hammadi">Nag Hammadi</option>
+              <option value="Dishna">Dishna</option>
+
+              <option value="Hurghada">Hurghada</option>
+              <option value="Shalateen">Shalateen</option>
+              <option value="Marsa Alam">Marsa Alam</option>
+
+              <option value="Bilbeis">Bilbeis</option>
+              <option value="Zagazig">Zagazig</option>
+              <option value="Faqous">Faqous</option>
+
+              <option value="Dar El Salam">Dar El Salam</option>
+              <option value="El Balyana">El Balyana</option>
+              <option value="El Mansha">El Mansha</option>
+
+              <option value="Dahab">Dahab</option>
+              <option value="Nuweiba">Nuweiba</option>
+              <option value="Saint Catherine">Saint Catherine</option>
+
+              <option value="Ataqqa">Ataqqa</option>
+              <option value="Ganayen">Ganayen</option>
+              <option value="Arba'een">Arba'een</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="street">
+            <label for="LocationPatient">Location</label>
+            <input type="text" class="form-control" id="LocationPatient" name="LocationPatient" placeholder="Location"
+              required>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="password">
+            <label for="PasswordPatient">Password</label>
+            <input type="password" class="form-control" id="PasswordPatient" name="PasswordPatient"
+              placeholder="Password" minlength="8" value="" maxlength="20" aria-describedby="passwordHelpBlock">
+            <small id="" class="text-muted">
+              Must be 8-20 characters long.
+            </small>
+          </div>
+          <div class="form-check terms-conditions">
+            <input class="form-check-input" type="checkbox" id="terms-conditions" required>
+            <label class="form-check-label" for="terms-conditions">
+              I agree to terms and conditions
+            </label>
+          </div>
+        </div>
+
+        <div class="form-row row-1">
+          <div class="blood-type">
+            <label for="BloodType">Blood Type</label>
+            <select class="form-control center-select" id="BloodType" name="BloodType" size="3" required>
+              <option value="A+">A+</option>
+              <option value="O+">O+</option>
+              <option value="B+">B+</option>
+              <option value="AB+">AB+</option>
+              <option value="A-">A-</option>
+              <option value="O-">O-</option>
+              <option value="B-">B-</option>
+              <option value="AB-">AB-</option>
+            </select>
+          </div>
+
+          <div class="chronic-diseases">
+            <label for="ChronicDiseases">Chronic Diseases</label>
+            <select class="form-control center-select" id="ChronicDiseases" name="ChronicDiseases" multiple size="3"
+              required>
+              <option value="HeartDisease">Heart Disease</option>
+              <option value="Diabetes">Diabetes</option>
+              <option value="Cancer">Cancer</option>
+              <option value="HighBloodPressure">High Blood Pressure</option>
+              <option value="AlzheimerDiseases">Alzheimer Disease</option>
+              <option value="COPD">Chronic Obstructive Pulmonary Disease</option>
+              <option value="Depression">Depression</option>
+              <option value="Asthma">Asthma</option>
+              <option value="Arthritis">Arthritis</option>
+              <option value="Osteoporosis">osteoporosis</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-row row-5"><label class="form-check-label allergies-label" for="allergies">Allergies</label>
+        </div>
+        <div class="form-row row-4">
+
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="DrugAllergy" id="DrugAllergy">
+                <label class="form-check-label allergy-label" for="DrugAllergy">
+                  Drug Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="DrugAllergyDetails" name="DrugAllergyDetails"
+                  placeholder="ex. some Medication, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="FoodAllergy" id="FoodAllergy">
+                <label class="form-check-label daallergy-typey-label" for="FoodAllergy">
+                  Food Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="FoodAllergyDetails" name="FoodAllergyDetails"
+                  placeholder="ex. jelly, peanut butter, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="InsectAllergy" id="InsectAllergy">
+                <label class="form-check-label allergy-type-label" for="InsectAllergy">
+                  Insect Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="InsectAllergyDetails" name="InsectAllergyDetails"
+                  placeholder="ex. bees, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="LatexAllergy" id="LatexAllergy">
+                <label class="form-check-label allergy-type-label" for="LatexAllergy">
+                  Latex Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="LatexAllergyDetails" name="LatexAllergyDetails"
+                  placeholder="ex. natrual rubber latex, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="MoldAllergy" id="MoldAllergy">
+                <label class="form-check-label allergy-type-label" for="MoldAllergy">
+                  Mold Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="MoldAllergyDetails" name="MoldAllergyDetails"
+                  placeholder="ex. fungi, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="PetAllergy" id="PetAllergy">
+                <label class="form-check-label allergy-type-label" for="pet-allergy">
+                  Pet Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="PetAllergyDetails" name="PetAllergyDetails"
+                  placeholder="ex. dogs, cats, etc.">
+              </div>
+
+            </div>
+          </div>
+          <div class="form-row row-3">
+            <div class="allergies">
+              <div class="form-check allergy-type">
+                <input class="form-check-input" type="checkbox" name="PollenAllergy" id="PollenAllergy">
+                <label class="form-check-label allergy-type-label" for="PollenAllergy">
+                  Pollen Allergy
+                </label>
+              </div>
+
+              <div class="allergy-details">
+                <input type="text" class="form-control" id="PollenAllergyDetails" name="PollenAllergyDetails"
+                  placeholder="ex. seasonal allergies, etc.">
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="form-row row-5"><label class="form-check-label vaccination-label"
+            for="vaccination">Vaccination</label>
+        </div>
+        <div class="form-row row-2">
+          <div class="first-dose">
+
+            <div class="dose-type">
+              <label for="FirstDoseType">First dose</label>
+              <select class="form-control center-select" id="FirstDoseType" name="FirstDoseType" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="FirstDoseDate">Date</label>
+              <input class="form-control" type="date" name="FirstDoseDate" id="FirstDoseDate">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-row row-2">
+          <div class="second-dose">
+
+            <div class="dose-type">
+              <label for="SecondDoseType">Second dose</label>
+              <select class="form-control center-select" id="SecondDoseType" name="SecondDoseType" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="second-dose-date">Date</label>
+              <input class="form-control" type="date" name="SecondDoseDate" id="SecondDoseDate">
+            </div>
+
+          </div>
+        </div>
+
+        <div class="form-row row-2">
+          <div class="third-dose">
+
+            <div class="dose-type">
+              <label for="ThirdDoseType">Third dose</label>
+              <select class="form-control center-select" id="ThirdDoseType" name="ThirdDoseType" size="2" required>
+                <option value="N/A">N/A</option>
+                <option value="Pfizer">Pfizer</option>
+                <option value="Janssen">Janssen</option>
+                <option value="AstraZeneca">AstraZeneca</option>
+                <option value="Moderma">Moderma</option>
+                <option value="Sinopharm">Sinopharm</option>
+                <option value="Sinovac">Sinovac</option>
+                <option value="Covovax">Covovax</option>
+                <option value="Nuvaxvoid">Nuvaxvoid</option>
+              </select>
+            </div>
+
+            <div class="dose-date">
+              <label for="third-dose-date">Date</label>
+              <input class="form-control" type="date" name="ThirdDoseDate" id="ThirdDoseDate">
+            </div>
+
+          </div>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+</div>

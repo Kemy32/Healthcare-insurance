@@ -1,0 +1,296 @@
+.to-top-icon {
+
+  position: fixed;
+  right: 35px;
+  bottom: 85px;
+  background-color: white;
+  color: #5553B7;
+  border: 5px solid #5553B7;
+  border-radius: 50%;
+  font-size: 40px;
+  z-index: 9;
+  scroll-behavior: smooth;
+}
+
+.profile-card {
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
+  display: flex;
+
+  border-radius: 30px;
+
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+.left-side {
+  height: auto;
+  flex: 1.5 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  background-color: #85C88A;
+}
+
+.welcome-msg {
+  padding: 5% 10% 2%;
+  color: white;
+}
+
+.name {
+  font-size: 2.5rem;
+  text-overflow: clip;
+}
+
+.profile-img {
+  object-fit: cover;
+  width: 15rem;
+  height: 20rem;
+  background-color: #fff;
+  border-bottom-right-radius: 100px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  border: 5px solid white;
+  margin-left: 55%;
+}
+
+
+
+.right-side {
+  flex: 3 1;
+}
+
+.info {
+  padding: 0 5% 3% 20%;
+}
+
+.profile-info {
+  text-align: center;
+  padding: 2.2rem 0;
+  margin-bottom: 0;
+}
+
+.details {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.details-ans {
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.edit-btn-anchor {
+  text-decoration: none;
+}
+
+.edit-btn {
+  display: block;
+  margin: 1.5rem auto 0.5rem;
+  padding: 0.5rem 3rem;
+}
+
+.edit-btn:hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+
+.medical-information {
+  width: 85%;
+  height: auto;
+  margin: 5% auto;
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  border-radius: 30px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.medical-information-heading {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.appointments {
+  display: block;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.appointments-requests {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+
+.profession-details-table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  margin: 5% 5%;
+}
+
+.user-clinic-table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  margin: 5% 5%;
+}
+
+.request-app-table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  height: 25.2rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 5% 5% 0;
+
+}
+
+.upcoming-app-table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  height: 25.2rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 5% 5% 0;
+}
+
+.table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  height: 25.2rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 0 5%;
+}
+
+.appointments-table {
+  width: 100%;
+  background-color: #fff;
+}
+
+td,
+th {
+  border: 3px solid #EEEEEE;
+  text-align: center;
+  height: 5rem;
+  width: 15rem;
+}
+
+.canecl-btn,
+.accept-btn {
+  display: block;
+  margin: 5% auto;
+}
+
+.appointment-note {
+  margin-left: 5%;
+  margin-top: 1%;
+  color: red;
+}
+
+.upcoming-appointments {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+
+.information {
+  margin: 5% 0 5% 5%;
+}
+
+.information-heading {
+  margin-bottom: 2%;
+}
+
+.information-details {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.profession-details-details-table,
+.user-clinic-details-table {
+  width: 100%;
+  margin: 0% auto;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.profession-details-details-th {
+  width: 0;
+}
+
+
+.profession-details-details,
+.user-clinic-details {
+  height: auto;
+  margin: 5% 0;
+}
+
+.profession-details-details-heading,
+.user-clinic-details-heading {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+
+.user-reveiws-details {
+  width: 90%;
+  height: 32rem;
+  margin: 5% auto;
+  padding: 2%;
+  background-color: #fff;
+  border: 5px solid #F2F2F2;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  overflow-y: auto;
+  overflow-x: hidden;
+
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  overflow: hidden;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+
+.testimonial-card .avatar {
+  width: 110px;
+  margin-top: -60px;
+  overflow: hidden;
+  border: 3px solid #fff;
+  border-radius: 50%;
+}
+
+.reviews-row {
+  margin: 3% 0;
+}
+
+.rating {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.rating-line {
+  width: 60%;
+  margin: 1% auto 5%;
+}
+
+
+.pi-star {
+  font-size: 1.5rem;
+  color: black;
+}
+
+.pi-star-fill {
+  font-size: 1.5rem;
+  color: orange;
+}
+
+.background {
+  background-color: #f7f7f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}

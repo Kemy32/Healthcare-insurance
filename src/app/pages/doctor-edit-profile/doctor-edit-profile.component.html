@@ -1,0 +1,641 @@
+<div class="card">
+
+  <div class="left-side">
+    <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+    <h4 class="user-type">Doctor</h4>
+    <div class="image-upload-div">
+      <div class="image-upload">
+        <label for="ImageUploadDoctor">
+          Upload profile picture?
+        </label>
+        <input id="ImageUploadDoctor" name="ImageUploadDoctor" type="file">
+      </div>
+    </div>
+    <div class="submit">
+      <input class="submit-btn btn btn-primary" id="SubmitDoctor" name="SubmitDoctor" type="submit" value="Edit">
+    </div>
+  </div>
+
+  <div class="right-side">
+    <form>
+      <div class="form-row row-1">
+        <div class="fullname">
+          <label for="FirstNameDoctor">First name</label>
+          <input type="text" class="form-control" id="FirstNameDoctor" name="FirstNameDoctor" placeholder="First name"
+            value="" required>
+        </div>
+        <div class="fullname">
+          <label for="MiddleNameDoctor">Middle name</label>
+          <input type="text" class="form-control" id="MiddleNameDoctor" name="MiddleNameDoctor"
+            placeholder="Middle name" value="" required>
+        </div>
+        <div class="fullname">
+          <label for="LastNameDoctor">Last name</label>
+          <input type="text" class="form-control" id="LastNameDoctor" name="LastNameDoctor" placeholder="Last name"
+            value="" required>
+        </div>
+      </div>
+
+
+      <div class="form-row row-1">
+        <div class="birth">
+          <label for="BirthdateDoctor">Birthdate</label>
+          <input type='date' class="form-control birth-input" id="BirthdateDoctor" name="BirthdateDoctor" value=""
+            required>
+        </div>
+
+        <div class="gender">
+
+          <label class="form-check-label gender-label" for="gender">Gender</label>
+
+          <div class="form-check male-check">
+            <input class="form-check-input male-check-circle" type="radio" name="MaleGenderDoctor"
+              id="MaleGenderDoctor">
+            <label class="form-check-label" for="MaleGenderDoctor">
+              <img class="gender-icon" src="https://i.imgur.com/7alkg7M.png" alt="Male-icon"> Male
+            </label>
+          </div>
+
+          <div class="form-check female-check">
+            <input class="form-check-input female-check-circle" type="radio" name="FemaleGenderDoctor"
+              id="FemaleGenderDoctor">
+            <label class="form-check-label" for="FemaleGenderDoctor">
+              <img class="gender-icon" src="https://i.imgur.com/31PD7OW.png" alt="Female-icon"> Female
+            </label>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-row row-1">
+        <div class="email">
+          <label for="EmailDoctor">Email address</label>
+          <input type="email" class="form-control" id="EmailDoctor" name="EmailDoctor" placeholder="Name@example.com"
+            value="" required>
+        </div>
+
+        <div class="phone">
+          <label for="NumberDoctor">Phone number</label>
+          <input type="tel" class="form-control" id="NumberDoctor" name="NumberDoctor" pattern="^01[0-2,5]{1}[0-9]{8}$"
+            placeholder="Vodafone/Etisalat/Orange/We" value="" required>
+        </div>
+      </div>
+
+      <div class="form-inline row-1">
+        <div class="password">
+          <label for="PasswordDoctor">Password</label>
+          <input type="password" class="form-control" id="PasswordDoctor" name="PasswordDoctor" placeholder="Password"
+            minlength="8" maxlength="20" aria-describedby="passwordHelpBlock" value="">
+          <small id="" class="text-muted">
+            Must be 8-20 characters long.
+          </small>
+        </div>
+        <div class="form-check terms-conditions">
+          <input class="form-check-input" type="checkbox" id="terms-conditions" name="TermsConditions" required>
+          <label class="form-check-label" for="terms-conditions">
+            I agree to terms and conditions
+          </label>
+        </div>
+      </div>
+
+      <div class="form-row row-2">
+        <div class="title">
+          <label for="TitleDoctor">Title</label>
+          <select class="form-control center-select" id="TitleDoctor" name="TitleDoctor" multiple size="3" value=""
+            required>
+            <option value="Professor">Professor</option>
+            <option value="Consultant">Consultant</option>
+            <option value="Lecturer">Lecturer</option>
+            <option value="Specialist">Specialist</option>
+            <option value="Junior doctor">Junior doctor</option>
+            <option value="SAS doctor">SAS doctor</option>
+            <option value="General practitioner">General practitioner</option>
+            <option value="Academic doctor">Academic doctor</option>
+          </select>
+        </div>
+
+        <div class="specialist">
+          <label for="SpecialistDoctor">Specialist</label>
+          <select class="form-control center-select" id="SpecialistDoctor" name="SpecialistDoctor" multiple size="3"
+            value="" required>
+            <option>Otolaryngologist</option>
+            <option>Dentist</option>
+            <option>Pulmonologist</option>
+            <option>Gynecologist</option>
+            <option>Cardiologist & Vascular Diseases</option>
+            <option>Hepatologist</option>
+            <option>Neurologist</option>
+            <option>Dermatologist</option>
+            <option>Nutritionist</option>
+            <option>Geriatricians</option>
+            <option>Endocrinologist</option>
+            <option>Allergist & Immunologist</option>
+            <option>Ophthalmologist</option>
+            <option>Oncologist</option>
+            <option>Gastroenterologist</option>
+            <option>Phoniatrics</option>
+            <option>Physiotherapist</option>
+            <option>Psychiatrist</option>
+            <option>Plastic Surgeon</option>
+            <option>Urologist</option>
+          </select>
+        </div>
+
+      </div>
+
+      <div class="form-row row-3">
+        <small class="multi-select-tip text-muted">Hold down the Ctrl (windows) or Command (Mac) button to select
+          multiple
+          options.</small>
+      </div>
+
+      <div class="form-row row-4">
+        <div class="specializations-of-specialist">
+          <label for="SpecializationsOfSpecialistDoctor">Specializations of Specialist</label>
+          <select class="form-control center-select" id="SpecializationsOfSpecialistDoctor"
+            name="SpecializationsOfSpecialistDoctor" multiple size="3" value="" required>
+            <!--Otolaryngologist-->
+            <option>Pediatric otolaryngology</option>
+            <option>Audiology</option>
+            <option>Laryngology</option>
+            <!--Dentistry-->
+            <option>Surgeon Dentistry</option>
+            <option>Cosmetic Dentistry</option>
+            <option>Geriatric Dentistry</option>
+            <!--Gynecologist-->
+            <option>Andrologists</option>
+            <option>Reproductive Surgeons</option>
+            <option>Reproductive Immunologists</option>
+            <!--Cardiology and Vascular Disease -->
+            <option>Heart surgeons</option>
+            <option>Transplant specialists</option>
+            <option>Vascular Surgery</option>
+            <!--Hepatology-->
+            <option>Hepatobiliary surgery</option>
+            <option>Liver Transplant surgery</option>
+            <option>General hepatology doctor</option>
+            <!--Brain and nervous system-->
+            <option>Neurology</option>
+            <option>Spinal Surgery</option>
+            <option>Neurosurgery</option>
+            <!--Dermatology -->
+            <option>Medical Dermatology</option>
+            <option>Surgical Dermatology</option>
+            <option>Pediatric Dermatology</option>
+            <!--Geriatrics-->
+            <option>Orthopedics</option>
+            <option>Hand surgeons</option>
+            <option>Hip and Knee replacement</option>
+            <!--Ophthalmology -->
+            <option>Optician</option>
+            <option>Cornea specialist</option>
+            <option>Retina specialist</option>
+            <!--Oncology-->
+            <option>Medical oncologists</option>
+            <option>Surgical oncologists</option>
+            <option>Neuro-oncologists</option>
+            <!--Gastroenterology and Endoscopy-->
+            <option>Colon doctor</option>
+            <option>Esophagus doctor</option>
+            <option>Stomach doctor</option>
+            <!--Physiotherapy and Sport Injuries-->
+            <option>Orthopedic Physiotherapists</option>
+            <option>Cardio-Respiratory Physiotherapist</option>
+            <option>Pediatric Physiotherapist</option>
+            <!--Urology -->
+            <option>Pediatric Urology</option>
+            <option>Urologic Oncology</option>
+            <option>Male Infertility</option>
+            <!--plastic surgeon-->
+            <option>Eyelid lift</option>
+            <option>Ear reshaping</option>
+            <option>Hair replacement surgery</option>
+            <!--Psychiatry -->
+            <option>General psychiatry</option>
+            <option>Liaison psychiatry</option>
+            <option>Medical psychotherapy</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row row-3">
+        <small class="multi-select-tip text-muted">Hold down the Ctrl (windows) or Command (Mac) button to select
+          multiple
+          options.</small>
+      </div>
+
+      <div class="form-row row-1">
+        <div class="insurance">
+          <label for="InsuranceCompanies">Insurance Companies</label>
+          <select class="form-control center-select" id="InsuranceCompanies" name="InsuranceCompanies" multiple size="3"
+            value="" required>
+            <option value="N/A" selected>N/A</option>
+            <option value="AXA">AXA</option>
+            <option value="Allianz">Allianz</option>
+            <option value="MetLife">MetLife</option>
+            <option value="MedRight">MedRight</option>
+            <option value="Amanleek">Amanleek</option>
+            <option value="Bupa">Bupa</option>
+            <option value="Misr life insurance">Misr life insurance</option>
+            <option value="Ministery of Health & Population">Ministery of Health & Population</option>
+          </select>
+        </div>
+
+        <div class="experience">
+          <label for="YOEDoctor">Years of Experience</label>
+          <input type="number" class="form-control" id="YOEDoctor" name="YOEDoctor" min="1" max="100"
+            placeholder="From 1 year to 99 years" value="">
+        </div>
+      </div>
+
+
+      <div class="form-row row-1">
+        <div class="clinic-name">
+          <label for="ClinicNameDoctor">Clinic name</label>
+          <input type="text" class="form-control" id="ClinicNameDoctor" name="ClinicNameDoctor"
+            placeholder="Clinic Name" value="" required>
+        </div>
+      </div>
+
+      <div class="form-row row-2">
+        <div class="city">
+          <label for="City">City</label>
+          <select class="form-control" id="City" name="City" required>
+            <option class="disabled-select" value="AllCities" selected="true" disabled>All cities</option>
+            <option value="Alexandria">Alexandria</option>
+            <option value="Aswan">Aswan</option>
+            <option value="Asyut">Asyut</option>
+            <option value="Beheira">Beheira</option>
+            <option value="Beni-Suef">Beni Suef</option>
+            <option value="Cairo">Cairo</option>
+            <option value="Dakahlia">Dakahlia</option>
+            <option value="Damietta">Damietta</option>
+            <option value="Faiyum">Faiyum</option>
+            <option value="Gharbia">Gharbia</option>
+            <option value="Giza">Giza</option>
+            <option value="Ismailia">Ismailia</option>
+            <option value="KafrElSheikh">Kafr El Sheikh</option>
+            <option value="Luxor">Luxor</option>
+            <option value="Matruh">Matruh</option>
+            <option value="Minya">Minya</option>
+            <option value="Monufia">Monufia</option>
+            <option value="NewValley">New Valley</option>
+            <option value="NorthSinai">North Sinai</option>
+            <option value="PortSaid">Port Said</option>
+            <option value="Qalyubia">Qalyubia</option>
+            <option value="Qena">Qena</option>
+            <option value="RedSea ">Red Sea </option>
+            <option value="Sharqia">Sharqia</option>
+            <option value="Sohag">Sohag</option>
+            <option value="SouthSinai">South Sinai</option>
+            <option value="Suez">Suez</option>
+          </select>
+        </div>
+        <div class="area">
+          <label for="area">Area</label>
+          <select class="form-control" id="Area" name="Area" required>
+            <option class="disabled-select" selected="true" disabled>Choose city first</option>
+
+            <option value="Anfoushi">Anfoushi</option>
+            <option value="Asafra">Asafra</option>
+            <option value="Azarita">Azarita</option>
+
+            <option value="Daraw">Daraw</option>
+            <option value="Edfu">Edfu</option>
+            <option value="NewAswan">New Aswan</option>
+
+            <option value="Abnub">Abnub</option>
+            <option value="AbuTig">Abu Tig</option>
+            <option value="Asyut">Asyut</option>
+
+            <option value="Edku">Edku</option>
+            <option value="Damanhur">Damanhur</option>
+            <option value="El Denlengat">El Denlengat</option>
+
+            <option value="Biba">Biba</option>
+            <option value="Ihnasiya">Ihnasiya</option>
+            <option value="NewBeniSuef">New Beni Suef</option>
+
+            <option value="New cairo">New cairo</option>
+            <option value="Nasr city">Nasr city</option>
+            <option value="El Rehab">El Rehab</option>
+            <option value="Zamalek">Zamalek</option>
+            <option value="MasrElGdeda">Masr Elgdeda</option>
+            <option value="El Rehab">Zeitoun</option>
+
+            <option value="Aga">Aga</option>
+            <option value="Bilqas">Bilqas</option>
+            <option value="Damas">Damas</option>
+
+            <option value="DamiRasElBar">Dami Ras El Bar</option>
+            <option value="ElRahamnah">El Rahamnah </option>
+            <option value="Siege of Damietta ">Siege of Damietta </option>
+
+            <option value="Ibsheway">Ibsheway</option>
+            <option value="Sinnuris">Sinnuris</option>
+            <option value="Markaz">Markaz</option>
+
+            <option value="Tanta">Tanta</option>
+            <option value="Kotoor">Kotoor</option>
+            <option value="Basyoun">Basyoun</option>
+
+            <option value="Dokki">Dokki</option>
+            <option value="El-Haram">El-Haram</option>
+            <option value="Agouza">Agouza</option>
+            <option value="El Sheikh Zayed">El Sheikh Zayed</option>
+            <option value="6th of October">6th of October</option>
+            <option value="Bulaq">Bulaq</option>
+
+            <option value="TellElKebir">Tell El Kebir</option>
+            <option value="AbuSuwir">Abu Suwir</option>
+            <option value="Fayid">Fayid</option>
+
+            <option value="Al-Burulus">Al-Burulus</option>
+            <option value="Metoubes">Metoubes</option>
+            <option value="KafrAsh-Shaykh">Kafr ash-Shaykh</option>
+
+            <option value="Qurna">Qurna</option>
+            <option value="Esna">Esna</option>
+            <option value="Tiba">Tiba</option>
+
+            <option value="El Dabaa">El Dabaa</option>
+            <option value="El Alamein">El Alamein</option>
+            <option value="El Alamein">El Alamein</option>
+
+            <option value="New Minya">New Minya</option>
+            <option value="Beni Mazar">Beni Mazar</option>
+            <option value="Deir Mawas">Deir Mawas</option>
+
+            <option value="Shibin El Kom">Shibin El Kom</option>
+            <option value="Menouf">Menouf</option>
+            <option value="Ashmoun">Ashmoun</option>
+
+            <option value="Kharga">Kharga</option>
+            <option value="Balat">Balat</option>
+            <option value="Dakhla">Dakhla</option>
+
+            <option value="El Arish">El Arish</option>
+            <option value="Nekhel">Nekhel</option>
+            <option value="Rafah">Rafah</option>
+
+            <option value="Al-Zohour">Al-Zohour</option>
+            <option value="Al-Dawahy">Al-Dawahy</option>
+            <option value="Al-Sharq">Al-Sharq</option>
+
+            <option value="Qift">Qift</option>
+            <option value="Nag Hammadi">Nag Hammadi</option>
+            <option value="Dishna">Dishna</option>
+
+            <option value="Hurghada">Hurghada</option>
+            <option value="Shalateen">Shalateen</option>
+            <option value="Marsa Alam">Marsa Alam</option>
+
+            <option value="Bilbeis">Bilbeis</option>
+            <option value="Zagazig">Zagazig</option>
+            <option value="Faqous">Faqous</option>
+
+            <option value="Dar El Salam">Dar El Salam</option>
+            <option value="El Balyana">El Balyana</option>
+            <option value="El Mansha">El Mansha</option>
+
+            <option value="Dahab">Dahab</option>
+            <option value="Nuweiba">Nuweiba</option>
+            <option value="Saint Catherine">Saint Catherine</option>
+
+            <option value="Ataqqa">Ataqqa</option>
+            <option value="Ganayen">Ganayen</option>
+            <option value="Arba'een">Arba'een</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="form-row row-4">
+        <div class="location">
+          <label for="LocationDoctor">Location</label>
+          <input type="text" class="form-control" id="LocationDoctor" name="LocationDoctor"
+            placeholder="Location (street-building-etc..)" value="" required>
+        </div>
+      </div>
+
+      <div class="form-row row-1">
+
+        <div class="fees">
+          <label for="FeesDoctor">Examination Fees</label>
+          <input class="form-control" type="number" id="FeesDoctor" name="FeesDoctor" min="10" max="3000"
+            placeholder="Egyptian Pound " value="" required>
+          <small class="multi-select-tip text-muted">Range from 10 to 3000.</small>
+        </div>
+
+        <div class="waiting-time">
+          <label for="AVGWaitingTimeDoctor">Average waiting time</label>
+          <input class="form-control" type="number" id="AVGWaitingTimeDoctor" name="AVGWaitingTimeDoctor" min="5"
+            max="120" value="" placeholder="Waiting time in minutes" required>
+          <small class="multi-select-tip text-muted">Range from 5 to 120 mins.</small>
+        </div>
+      </div>
+
+      <div class="form-row row-3"><label class="form-check-label working-days-hours-label"
+          for="working-days-hours">Working
+          Days/Hours</label>
+      </div>
+      <div class="form-row row-5">
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="SundayDoctor" id="SundayDoctor">
+              <label class="form-check-label day-label" for="SundayDoctor">
+                Sunday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="SundayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="SundayFromTimeDoctor" id="SundayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="SundayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="SundayToTimeDoctor" id="SundayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="SundayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="SundayBookingTimeDoctor" min="10" max="1440"
+                name="SundayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="MondayDoctor" id="MondayDoctor">
+              <label class="form-check-label day-label" for="MondayDoctor">
+                Monday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="MondayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="MondayFromTimeDoctor" id="MondayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="MondayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="MondayToTimeDoctor" id="MondayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="MondayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="MondayBookingTimeDoctor" min="10" max="1440"
+                name="MondayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="TuesdayDoctor" id="TuesdayDoctor">
+              <label class="form-check-label day-label" for="TuesdayDoctor">
+                Tuesday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="TuesdayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="TuesdayFromTimeDoctor" id="TuesdayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="TuesdayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="TuesdayToTimeDoctor" id="TuesdayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="TuesdayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="TuesdayBookingTimeDoctor" min="10" max="1440"
+                name="TuesdayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="WednesdayDoctor" id="WednesdayDoctor">
+              <label class="form-check-label day-label" for="WednesdayDoctor">
+                Wednesday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="WednesdayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="WednesdayFromTimeDoctor" id="WednesdayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="WednesdayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="WednesdayToTimeDoctor" id="WednesdayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="WednesdayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="WednesdayBookingTimeDoctor" min="10" max="1440"
+                name="WednesdayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="ThursdayDoctor" id="ThursdayDoctor">
+              <label class="form-check-label day-label" for="ThursdayDoctor">
+                Thursday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="ThursdayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="ThursdayFromTimeDoctor" id="ThursdayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="ThursdayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="ThursdayToTimeDoctor" id="ThursdayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="ThursdayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="ThursdayBookingTimeDoctor" min="10" max="1440"
+                name="ThursdayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="FridayDoctor" id="FridayDoctor">
+              <label class="form-check-label day-label" for="FridayDoctor">
+                Friday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="FridayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="FridayFromTimeDoctor" id="FridayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="FridayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="FridayToTimeDoctor" id="FridayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="FridayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="FridayBookingTimeDoctor" min="10" max="1440"
+                name="FridayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+        <div class="form-row row-3">
+          <div class="working-days-hours">
+            <div class="form-check day">
+              <input class="form-check-input" type="checkbox" name="SaturdayDoctor" id="SaturdayDoctor">
+              <label class="form-check-label day-label" for="SaturdayDoctor">
+                Saturday
+              </label>
+            </div>
+
+            <div class="working-hours-from">
+              <label class="from-label" for="SaturdayFromTimeDoctor">From</label>
+              <input type="time" class="form-control" name="SaturdayFromTimeDoctor" id="SaturdayFromTimeDoctor">
+            </div>
+
+
+            <div class="working-hours-to">
+              <label class="to-label" for="SaturdayToTimeDoctor">To</label>
+              <input type="time" class="form-control" name="SaturdayToTimeDoctor" id="SaturdayToTimeDoctor">
+            </div>
+
+            <div class="booking-time">
+              <label class="booking-time-label" for="SaturdayBookingTimeDoctor">Booking time</label>
+              <input type="number" class="form-control" id="SaturdayBookingTimeDoctor" min="10" max="1440"
+                name="SaturdayBookingTimeDoctor" placeholder="ex: every 60 mins">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+
+</div>

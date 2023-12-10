@@ -1,0 +1,278 @@
+.card {
+    width: 60%;
+    height: auto;
+    margin: 5% auto;
+  
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  
+    background-color: #EEEEEE;
+    border: 5px solid #F2F2F2;
+    border-radius: 30px;
+    box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  }
+  
+  
+  .left-side {
+    flex: 1 1;
+    background-color: #EEEEEE;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
+  
+  
+  .profile-img {
+    width: 12rem;
+    height: auto;
+    display: block;
+    flex: 3 1 auto;
+    border-radius: 50%;
+    margin: 3rem auto 1rem;
+  }
+  
+  .user-type {
+    text-align: center;
+  }
+  
+  .image-upload-div {
+    text-align: center;
+  }
+  
+  .image-upload {
+    background-image: linear-gradient(to right, #ef6e83, #ef6e83 50%, #000 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-upload:before {
+    content: '';
+    background: #ef6e83;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .image-upload:hover {
+    background-position: 0;
+  }
+  
+  .image-upload:hover::before {
+    width: 100%;
+  }
+  
+  
+  .image-upload>input {
+    display: none;
+  }
+  
+  
+  .submit-btn {
+    display: block;
+    background-color: #ff5b62;
+    border-color: #ff5b62;
+    border-radius: 5px;
+    padding: 0.5rem 3rem;
+    margin: 2rem auto 1rem;
+    box-shadow: none;
+  }
+  
+  .submit-btn:hover {
+    box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  }
+  
+  
+  
+  .right-side {
+    flex: 2 1;
+    background-color: #fff;
+    box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+    border-radius: 25px;
+  
+  }
+  
+  .form-style {
+    border-radius: 25px;
+  }
+  
+  :host ::ng-deep .p-tabview-nav {
+    justify-content: center;
+    border-radius: 25px;
+    border-bottom: none;
+  }
+  
+  :host ::ng-deep .p-tabview .p-tabview-nav li .p-tabview-nav-link:focus {
+    box-shadow: none;
+  }
+  
+  :host ::ng-deep .p-tabview .p-tabview-panels {
+    padding: 0;
+  }
+  
+  .form-control {
+    box-shadow: none;
+  }
+  
+  .row-1 {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0.5rem;
+  }
+  
+  .row-2 {
+    display: flex;
+    flex-direction: row;
+    margin: 1.5rem 0.5rem 0;
+  }
+  
+  .row-3 {
+    display: flex;
+    flex-direction: row;
+    margin: 0 0.5rem;
+  }
+  
+  .row-4 {
+    display: flex;
+    flex-direction: row;
+    margin: 0.5rem 0.5rem 0;
+  }
+  
+  .row-5 {
+    display: flex;
+    flex-direction: column;
+    margin: 1.5rem 0.5rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 8rem;
+  }
+  
+  .fullname,
+  .birth,
+  .gender,
+  .title,
+  .specialist,
+  .fees,
+  .experience,
+  .specializations-of-specialist,
+  .insurance,
+  .clinic-name,
+  .waiting-time,
+  .booking-method {
+    flex: 1 1;
+    margin: 0 0.5rem;
+  }
+  
+  .birth-input {
+    text-align: center;
+  }
+  
+  
+  .center-select {
+    text-align: center;
+  }
+  
+  .multi-select-tip {
+    margin: 0 auto;
+  }
+  
+  textarea {
+    resize: none;
+  }
+  
+  .gender-label {
+    display: block;
+  }
+  
+  .gender-icon {
+    width: 1rem;
+  }
+  
+  .male-check,
+  .female-check {
+    display: inline-block;
+    margin-top: 0.5rem;
+    margin-right: 2rem;
+  }
+  
+  .male-check-circle:checked {
+    background-color: #84c8ee;
+    border-color: #84c8ee;
+  }
+  
+  .female-check-circle:checked {
+    background-color: #ef6e83;
+    border-color: #ef6e83;
+  }
+  
+  
+  .form-check-input {
+    box-shadow: none;
+  }
+  
+  .email,
+  .phone {
+    flex: 1 1;
+    margin: 0 0.5rem;
+  }
+  
+  
+  .city,
+  .area,
+  .street,
+  .location {
+    flex: 1 1;
+    margin: 0 0.5rem;
+  }
+  
+  
+  .password {
+    margin: 0 0.5rem;
+  }
+  
+  .terms-conditions {
+    margin: auto;
+  }
+  
+  .working-days-hours {
+    flex: 1 1;
+    margin: 0 0.5rem;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .working-days-hours-label {
+    margin: 0 0.5rem;
+  }
+  
+  .day {
+    flex: 1 1;
+  }
+  
+  .working-hours-from,
+  .working-hours-to {
+    display: inline-block;
+    flex: 1 1;
+  }
+  
+  .booking-time {
+    display: inline-block;
+    flex: 2 1;
+  }
+  
+  .from-label,
+  .to-label,
+  .booking-time-label {
+    display: block;
+    text-align: center;
+  }
+  

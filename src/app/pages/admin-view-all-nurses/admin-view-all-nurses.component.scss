@@ -1,0 +1,33 @@
+.nurses-list {
+    display: block;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+  
+  .nurses-list-table-scroll {
+    box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+    height: 25.2rem;
+    overflow-x: auto;
+    overflow-y: scroll;
+    margin: 5% 5% 0;
+  
+  }
+  
+  .nurses-list-table {
+    width: 100%;
+    background-color: #fff;
+  }
+  
+  td,
+  th {
+    border: 3px solid #EEEEEE;
+    text-align: center;
+    height: 5rem;
+    width: 15rem;
+  }
+  
+  .delete-btn {
+    display: block;
+    margin: 5% auto;
+  }
+  

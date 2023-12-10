@@ -1,0 +1,1287 @@
+<!-- Link to top of the page -->
+
+<a href="#to-top"><i class="pi pi-angle-double-up to-top-icon"></i></a>
+
+
+
+<!-- Heading/paragraph div -->
+<div class="heading">
+  <h5 class="heading-h5">Book appointments with a click of a button</h5>
+  <p class="heading-p">join over 10,000 patient booked from our application</p>
+  <p class="heading-p">Book online or Call <i class="pi pi-phone phone1"></i> 18000</p>
+</div>
+
+<hr class="line">
+
+
+<!-- Filters div -->
+<div class="filter-div">
+  <h5 class="filter-title"><i class="pi pi-filter"></i> Filters</h5>
+
+  <p-panel class="" toggler="icon" toggler="header" header="Rate" [toggleable]="true" collapsed="true"
+    expandIcon="pi pi-angle-down" collapseIcon="pi pi-angle-up">
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Star1Rate" id="Star1Rate">
+      <label class="form-check-label" for="Star1Rate">
+        1 Star <span>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i></span>
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Star2Rate" id="Star2Rate">
+      <label class="form-check-label" for="Star2Rate">
+        2 Star <span>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i></span>
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Star3Rate" id="Star3Rate">
+      <label class="form-check-label" for="Star3Rate">
+        3 Star <span>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i></span>
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Star4Rate" id="Star4Rate">
+      <label class="form-check-label" for="Star4Rate">
+        4 Star <span>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star star-rate-empty-filter"></i></span>
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Star5Rate" id="Star5Rate">
+      <label class="form-check-label" for="Star5Rate">
+        5 Star <span>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i>
+          <i class="pi pi-star-fill star-rate-fill-filter"></i></span>
+      </label>
+    </div>
+  </p-panel>
+
+  <p-panel class="" toggler="icon" toggler="header" header="Gender" [toggleable]="true" collapsed="true"
+    expandIcon="pi pi-angle-down" collapseIcon="pi pi-angle-up">
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="MaleFilter" id="MaleFilter">
+      <label class="form-check-label" for="MaleFilter">
+        Male
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="FemaleFilter" id="FemaleFilter">
+      <label class="form-check-label" for="FemaleFilter">
+        Female
+      </label>
+    </div>
+  </p-panel>
+
+  <p-panel class="filter-last" toggler="icon" toggler="header" header="Examination Fees" [toggleable]="true"
+    collapsed="true" expandIcon="pi pi-angle-down" collapseIcon="pi pi-angle-up">
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="Any" id="Any">
+      <label class="form-check-label" for="Any">
+        Any
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="LessThan100" id="LessThan100">
+      <label class="form-check-label" for="LessThan100">
+        Less than 100 EGP
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="From100To200" id="From100To200">
+      <label class="form-check-label" for="From100To200">
+        From 100 EGP to 200 EGP
+      </label>
+    </div>
+    <div class="form-check">
+      <input class="form-check-input radio-box" type="radio" name="GreaterThan200" id="GreaterThan200">
+      <label class="form-check-label" for="GreaterThan200">
+        Greater than 200 EGP
+      </label>
+    </div>
+  </p-panel>
+  <div class="filter-bottom"></div>
+</div>
+
+
+<!-- Search result div -->
+
+<div class="search-result-block">
+  <div class="search-result-div-set">
+    <div>
+      <p class="sorting">Sorting</p>
+      <select class="form-select sorting-select" name="SortSearch" id="SortSearch">
+        <option disabled selected>Sort by....</option>
+        <option value="Top Rated">Top Rated</option>
+        <option value="Least Rated">Least Rated</option>
+        <option value="Price Low to High">Price Low to High</option>
+        <option value="Price High to Low">Price High to Low</option>
+      </select>
+
+    </div>
+    <div class="search-result-div">
+
+      <div class="information-1">
+        <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+        <p class="name"><span class="name-heading">Doctor </span><a class="link-to-profile" href="">Amr Khalid
+            Khalid</a></p>
+
+        <div class="title-doctor"><span class="title-heading"><a class="link-to-profile" href="">Title</a></span>
+          <ul class="title-list">
+            <li>Professor of Pediatrics</li>
+            <li>Consultant</li>
+          </ul>
+        </div>
+
+        <div class="specialist-doctor"><span class="specialist-heading"><a class="link-to-profile"
+              href="">Specialist</a></span>
+          <ul class="title-list">
+            <li>Cardiologist</li>
+            <li>Cardiologist & Vascular Diseases</li>
+            <li>Pediatric Cardiology </li>
+          </ul>
+        </div>
+
+        <div class="insurance"><span class="insurance-heading"><a class="link-to-profile" href="">Insuarnce</a></span>
+          <ul class="title-list">
+            <li>Allianz</li>
+            <li>Safe Life</li>
+            <li>MedLife</li>
+            <li>Lifes</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="information-2">
+        <p class="clinic-info"><i class="pi pi-id-card info-icon"></i>Clinic Name: <br><span
+            class="clinic-info-details">Dr Amr Amr Clinic</span></p>
+        <p class="clinic-info"><i class="pi pi-map-marker info-icon"></i>Location: <br> <span
+            class="clinic-info-details">El Sheikh Zayed , El 3aresh street , Beside Mall</span></p>
+        <p class="clinic-info"><i class="pi pi-wallet info-icon"></i>Fees: <br><span
+            class="clinic-info-details">150EGP</span></p>
+        <p class="clinic-info"><i class="pi pi-clock info-icon"></i>Waiting Time: <br><span
+            class="clinic-info-details">45 Minutes</span></p>
+        <p class="clinic-info"><i class="pi pi-phone info-icon"></i>Phone Number: <br> <span
+            class="clinic-info-details">16500 </span> <span class="call-cost">(cost of regular call)</span></p>
+        <p class="clinic-info"><i class="pi pi-check-circle info-icon"></i>Number of visitors: <br><span
+            class="clinic-info-details">50</span></p>
+        <p class="clinic-info">
+          <i class="pi pi-star star-rating info-icon"></i>Rating: <br>
+          <span class="clinic-info-details">
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star"></i></span></p>
+      </div>
+
+      <div class="information-3">
+        <h4 class="appointments-time-title">Appointments Time</h4>
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-btn-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-btn-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="booking-type"><span class="boooking-type-heading">Booking Type</span> <br> Appointments reservation
+        </p>
+      </div>
+    </div>
+    <div class="search-result-div">
+
+      <div class="information-1">
+        <img class="profile-img" src="https://i.imgur.com/BdxPAhS.png" alt="Profile pic">
+        <p class="name"><span class="name-heading">Nurse </span><a class="link-to-profile" href="">Laila Amr Mohamed</a>
+        </p>
+
+        <div class="title-nurse"><span class="title-heading"><a class="link-to-profile" href="">Title</a></span>
+          <ul class="title-list">
+            <li>Nursing assistant</li>
+            <li>Licensed practical nurse </li>
+          </ul>
+        </div>
+
+        <div class="specialist-nurse"><span class="specialist-heading"><a class="link-to-profile"
+              href="">Specialist</a></span>
+          <ul class="title-list">
+            <li>Certified Registered Nurse Anesthetist</li>
+            <li>Clinical Nurse Specialist</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="information-2">
+        <p class="clinic-info"><i class="pi pi-id-card info-icon"></i>Works for: <br><span
+            class="clinic-info-details">Male & Female</span></p>
+        <p class="clinic-info"><i class="pi pi-map-marker info-icon"></i>Location: <br> <span
+            class="clinic-info-details">El Sheikh Zayed</span></p>
+        <p class="clinic-info"><i class="pi pi-wallet info-icon"></i>Fees per Hour: <br><span
+            class="clinic-info-details">100 EGP</span></p>
+        <p class="clinic-info"><i class="pi pi-phone info-icon"></i>Phone Number: <br> <span
+            class="clinic-info-details">0122222222 </span></p>
+        <p class="clinic-info"><i class="pi pi-check-circle info-icon"></i>Number of Home visits: <br><span
+            class="clinic-info-details">50</span></p>
+        <p class="clinic-info">
+          <i class="pi pi-star star-rating info-icon"></i>Rating: <br>
+          <span class="clinic-info-details">
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star"></i></span></p>
+      </div>
+
+      <div class="information-3">
+        <h4 class="appointments-time-title">Appointments Time</h4>
+        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-btn-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls1"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-btn-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+    <div class="search-result-div">
+
+      <div class="information-1">
+        <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+        <p class="name"><span class="name-heading">Doctor </span><a class="link-to-profile" href="">Amr Khalid
+            Khalid</a></p>
+
+        <div class="title-doctor"><span class="title-heading"><a class="link-to-profile" href="">Title</a></span>
+          <ul class="title-list">
+            <li>Professor of Pediatrics</li>
+            <li>Consultant</li>
+          </ul>
+        </div>
+
+        <div class="specialist-doctor"><span class="specialist-heading"><a class="link-to-profile"
+              href="">Specialist</a></span>
+          <ul class="title-list">
+            <li>Cardiologist</li>
+            <li>Adult Vascular Diseases</li>
+            <li>Pediatric Cardiology </li>
+          </ul>
+        </div>
+
+        <div class="insurance"><span class="insurance-heading"><a class="link-to-profile" href="">Insuarnce</a></span>
+          <ul class="title-list">
+            <li>Allianz</li>
+            <li>Safe Life</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="information-2">
+        <p class="clinic-info"><i class="pi pi-id-card info-icon"></i>Clinic Name: <br><span
+            class="clinic-info-details">Dr Amr Amr Clinic</span></p>
+        <p class="clinic-info"><i class="pi pi-map-marker info-icon"></i>Location: <br> <span
+            class="clinic-info-details">El Sheikh Zayed , El 3aresh street , Beside Mall</span></p>
+        <p class="clinic-info"><i class="pi pi-wallet info-icon"></i>Fees: <br><span
+            class="clinic-info-details">150EGP</span></p>
+        <p class="clinic-info"><i class="pi pi-clock info-icon"></i>Waiting Time: <br><span
+            class="clinic-info-details">45 Minutes</span></p>
+        <p class="clinic-info"><i class="pi pi-phone info-icon"></i>Phone Number: <br> <span
+            class="clinic-info-details">16500 </span> <span class="call-cost">(cost of regular call)</span></p>
+        <p class="clinic-info"><i class="pi pi-check-circle info-icon"></i>Number of visitors: <br><span
+            class="clinic-info-details">50</span></p>
+        <p class="clinic-info">
+          <i class="pi pi-star star-rating info-icon"></i>Rating: <br>
+          <span class="clinic-info-details">
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star"></i></span></p>
+      </div>
+
+      <div class="information-3">
+        <h4 class="appointments-time-title">Appointments Time</h4>
+        <div id="carouselExampleControls2" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option class="date-time">Ignore</option>
+                    <!--To deselect time-->
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-btn-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls2"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-btn-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="booking-type"><span class="boooking-type-heading">Booking Type</span> <br> Appointments reservation
+        </p>
+      </div>
+    </div>
+    <div class="search-result-div">
+
+      <div class="information-1">
+        <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+        <p class="name"><span class="name-heading">Doctor </span><a class="link-to-profile" href="">Amr Khalid
+            Khalid</a></p>
+
+        <div class="title-doctor"><span class="title-heading"><a class="link-to-profile" href="">Title</a></span>
+          <ul class="title-list">
+            <li>Professor of Pediatrics</li>
+            <li>Consultant</li>
+          </ul>
+        </div>
+
+        <div class="specialist-doctor"><span class="specialist-heading"><a class="link-to-profile"
+              href="">Specialist</a></span>
+          <ul class="title-list">
+            <li>Cardiologist</li>
+            <li>Adult Vascular Diseases</li>
+            <li>Pediatric Cardiology </li>
+          </ul>
+        </div>
+
+        <div class="insurance"><span class="insurance-heading"><a class="link-to-profile" href="">Insuarnce</a></span>
+          <ul class="title-list">
+            <li>Allianz</li>
+            <li>Safe Life</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="information-2">
+        <p class="clinic-info"><i class="pi pi-id-card info-icon"></i>Clinic Name: <br><span
+            class="clinic-info-details">Dr Amr Amr Clinic</span></p>
+        <p class="clinic-info"><i class="pi pi-map-marker info-icon"></i>Location: <br> <span
+            class="clinic-info-details">El Sheikh Zayed , El 3aresh street , Beside Mall</span></p>
+        <p class="clinic-info"><i class="pi pi-wallet info-icon"></i>Fees: <br><span
+            class="clinic-info-details">150EGP</span></p>
+        <p class="clinic-info"><i class="pi pi-clock info-icon"></i>Waiting Time: <br><span
+            class="clinic-info-details">45 Minutes</span></p>
+        <p class="clinic-info"><i class="pi pi-phone info-icon"></i>Phone Number: <br> <span
+            class="clinic-info-details">16500 </span> <span class="call-cost">(cost of regular call)</span></p>
+        <p class="clinic-info"><i class="pi pi-check-circle info-icon"></i>Number of visitors: <br><span
+            class="clinic-info-details">50</span></p>
+        <p class="clinic-info">
+          <i class="pi pi-star star-rating info-icon"></i>Rating: <br>
+          <span class="clinic-info-details">
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star"></i></span></p>
+      </div>
+
+      <div class="information-3">
+        <h4 class="appointments-time-title">Appointments Time</h4>
+        <div id="carouselExampleControls3" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls3"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-btn-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls3"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-btn-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="booking-type"><span class="boooking-type-heading">Booking Type</span> <br> Appointments reservation
+        </p>
+      </div>
+    </div>
+    <div class="search-result-div">
+
+      <div class="information-1">
+        <img class="profile-img" src="https://i.imgur.com/8paCh6n.png" alt="Profile pic">
+        <p class="name"><span class="name-heading">Doctor </span><a class="link-to-profile" href="">Amr Khalid
+            Khalid</a></p>
+
+        <div class="title-doctor"><span class="title-heading"><a class="link-to-profile" href="">Title</a></span>
+          <ul class="title-list">
+            <li>Professor of Pediatrics</li>
+            <li>Consultant</li>
+          </ul>
+        </div>
+
+        <div class="specialist-doctor"><span class="specialist-heading"><a class="link-to-profile"
+              href="">Specialist</a></span>
+          <ul class="title-list">
+            <li>Cardiologist</li>
+            <li>Adult Vascular Diseases</li>
+            <li>Pediatric Cardiology </li>
+          </ul>
+        </div>
+
+        <div class="insurance"><span class="insurance-heading"><a class="link-to-profile" href="">Insuarnce</a></span>
+          <ul class="title-list">
+            <li>Allianz</li>
+            <li>Safe Life</li>
+          </ul>
+        </div>
+
+      </div>
+      <div class="information-2">
+        <p class="clinic-info"><i class="pi pi-id-card info-icon"></i>Clinic Name: <br><span
+            class="clinic-info-details">Dr Amr Amr Clinic</span></p>
+        <p class="clinic-info"><i class="pi pi-map-marker info-icon"></i>Location: <br> <span
+            class="clinic-info-details">El Sheikh Zayed , El 3aresh street , Beside Mall</span></p>
+        <p class="clinic-info"><i class="pi pi-wallet info-icon"></i>Fees: <br><span
+            class="clinic-info-details">150EGP</span></p>
+        <p class="clinic-info"><i class="pi pi-clock info-icon"></i>Waiting Time: <br><span
+            class="clinic-info-details">45 Minutes</span></p>
+        <p class="clinic-info"><i class="pi pi-phone info-icon"></i>Phone Number: <br> <span
+            class="clinic-info-details">16500 </span> <span class="call-cost">(cost of regular call)</span></p>
+        <p class="clinic-info"><i class="pi pi-check-circle info-icon"></i>Number of visitors: <br><span
+            class="clinic-info-details">50</span></p>
+        <p class="clinic-info">
+          <i class="pi pi-star star-rating info-icon"></i>Rating: <br>
+          <span class="clinic-info-details">
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star-fill "></i>
+            <i class="pi pi-star"></i></span></p>
+      </div>
+
+      <div class="information-3">
+        <h4 class="appointments-time-title">Appointments Time</h4>
+        <div id="carouselExampleControls4" class="carousel slide" data-bs-ride="false">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="time-table">
+                <div class="today-table">
+                  <p class="time-table-title">Today</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+
+                <div class="tomorrow-table">
+                  <p class="time-table-title">Tomorrow</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+                <div class="dar-after-tomorrow-table">
+                  <p class="time-table-title">Sun 26/5</p>
+                  <select class="date form-select" multiple>
+                    <option disabled class="date-time time-taken">06:00 AM</option>
+                    <option disabled class="date-time time-taken">07:00 AM</option>
+                    <option class="date-time">08:00 AM</option>
+                    <option class="date-time">09:00 AM</option>
+                    <option class="date-time">10:00 AM</option>
+                    <option class="date-time">11:00 AM</option>
+                    <option class="date-time">12:00 PM</option>
+                    <option class="date-time">01:00 AM</option>
+                  </select>
+                  <button class="btn btn-success booking-btn"> Book Now </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls4"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon carousel-btn-left" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls4"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon carousel-btn-right" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+        <p class="booking-type"><span class="boooking-type-heading">Booking Type</span> <br> Appointments reservation
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="search-result-pagination">
+  <nav>
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+</div>

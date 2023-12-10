@@ -1,0 +1,38 @@
+<nav id="to-top" class="navbar navbar-expand-lg navbar-dark">
+    <div class="container-fluid py-1">
+      <a class="navbar-brand" href="http://localhost:4200/#/home"><img class="brand-img"
+          src="https://i.imgur.com/hbyuiVK.png" alt=""> Safe-Life</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav set1">
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['admin-view-all-pat']" href="http://localhost:4200/#/admin-view-all-pat">Display All Patients List</a> <!-- Add href and in routerlink add component name-->
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['admin-view-all-docs']" href="http://localhost:4200/#/admin-view-all-docs">Display All Doctors List</a> <!-- Add href and in routerlink add component name-->
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['admin-view-all-nurses']" href="http://localhost:4200/#/admin-view-all-nurses">Display All Nurses List</a> <!-- Add href and in routerlink add component name-->
+          </li>
+          <li class="nav-item" [routerLinkActive]="['active']">
+            <a class="nav-link" [routerLink]="['admin-view-all-apps']" href="http://localhost:4200/#/admin-view-all-apps">Display All Appointments List</a> <!-- Add href and in routerlink add component name-->
+          </li>
+        </ul>
+  
+        <div class="accountControl">
+          <ul class="navbarAccountControl navbar-nav">
+            <li class="nav-item1 nav-link-account">
+              <a class="nav-link" href="http://localhost:4200/#/admin-reg-requests">
+                <i class="icon pi pi-bell"></i>Requests</a>
+            </li>
+            <li class="nav-item1" [routerLinkActive]="['active']"><a href="http://localhost:4200/#/login"
+                class="nav-link nav-link-account" [routerLink]="['login']"><i class="icon pi pi-sign-out"></i>Logout</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  

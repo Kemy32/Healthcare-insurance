@@ -1,0 +1,189 @@
+.search-div {
+  display: flex;
+  width: 40rem;
+  margin: 3rem auto;
+  justify-content: space-evenly;
+
+  background-color: #fff;
+  border: 5px solid #F2F2F2;
+  border-radius: 25px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+.row-1,
+.row-2,
+.row-4 {
+  display: flex;
+  flex-direction: row;
+  margin: 1.5rem auto;
+}
+
+.row-3 {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5rem 1rem;
+}
+
+
+
+.insurer-company {
+  flex: 1 1;
+  margin: 0.5rem 1rem;
+}
+
+.payment-frequency {
+  flex: 1 1;
+  margin: 0.5rem 1rem;
+}
+
+
+.insurer-company-dropdown::-webkit-scrollbar,
+.payment-frequency-dropdown::-webkit-scrollbar {
+  display: none;
+}
+
+
+.premium-range {
+  flex: 1 1;
+  margin: 0.5rem 1rem;
+}
+
+.premium-range-label {
+  display: block;
+}
+
+.premium-range-input {
+  display: block;
+  width: 14.5rem;
+}
+
+.deductible-range {
+  flex: 1 1;
+  margin: 0.5rem 1rem;
+}
+
+.deductible-range-label {
+  display: block;
+}
+
+.deductible-range-input {
+  display: block;
+  width: 14.5rem;
+}
+
+.benefits-input {
+  margin-right: 0.5rem;
+  float: left;
+}
+
+.definition {
+  display: block;
+  color: grey;
+  font-size: 0.8rem;
+  margin-left: 1.5rem;
+}
+
+
+.form-control {
+  box-shadow: none;
+}
+
+.form-check-input {
+  box-shadow: none;
+}
+
+
+.search-btn {
+  display: block;
+  border-radius: 5px;
+  padding: 0.5rem 4rem;
+  margin: 0 auto;
+  box-shadow: none;
+}
+
+.search-btn:hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+
+.search-result {
+  width: 95%;
+  height: 25.7rem;
+  overflow-y: auto;
+  margin: 1rem auto 4rem;
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  border-radius: 30px;
+
+
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+
+}
+
+.search-result::-webkit-scrollbar {
+  display: none;
+}
+
+.search-table {
+  background-color: white;
+  width: 100%;
+
+}
+
+
+
+
+table {
+  border-collapse: collapse;
+}
+
+td,
+th {
+  text-align: center;
+  height: 5rem;
+  width: 7rem;
+}
+
+.basic-benefits {
+  width: 5rem;
+}
+
+.insurer-img {
+  width: 5rem;
+  height: auto;
+}
+
+.insurer-benefit-available,
+.insurer-benefit-unavailable {
+  width: 2.5rem;
+  height: auto;
+}
+
+
+.annual-limit-price {
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.deductible-price {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.premium-price {
+  margin-bottom: 0;
+  font-size: 1.2rem;
+}
+
+
+.egp-date{
+  font-size: 0.6rem;
+}
+.subscribe-btn {
+  width: 5rem;
+  height: auto;
+  font-size: 0.8rem;
+  text-align: center;
+}

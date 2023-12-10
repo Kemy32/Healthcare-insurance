@@ -1,0 +1,77 @@
+
+.container {
+  margin: 5rem auto;
+  background-color: #fafafa;
+  height: 34rem;
+  border-radius: 15px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.center h1 {
+  text-align: center;
+  padding: 20px 0;
+  border-bottom: 3px solid rgb(219, 216, 216);
+  border-radius: 35px;
+}
+
+.accType {
+  float: left;
+  position: relative;
+}
+
+.accType a {
+  text-decoration: none;
+  color: blue;
+}
+
+.card {
+  text-align: center;
+  margin-top: .5rem;
+  border: 5px solid sliver;
+  border-radius: 50px;
+}
+
+.card :hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  border-radius: 50px;
+}
+
+.card-title {
+  color: #646FD4;
+  margin: 0;
+}
+
+.card-body h4 {
+  text-align: center;
+  padding: 20px 0;
+  text-decoration: none;
+  font-size: 1.8rem;
+}
+
+.card-body h4:hover {
+  box-shadow: none;
+}
+
+.doctor {
+  margin-right: 8rem;
+  margin-left: .5rem;
+  padding-right: 2rem;
+}
+
+
+.patient {
+  margin-right: 8rem;
+  // margin-left: .5rem;
+  padding-right: 2rem;
+}
+
+.docImg {
+  position: relative;
+  width: 16rem;
+  height: 16rem;
+  margin-top: 10%;
+}
+
+.card-body img:hover {
+  box-shadow: none;
+}

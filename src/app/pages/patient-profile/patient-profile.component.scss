@@ -1,0 +1,298 @@
+.to-top-icon {
+
+  position: fixed;
+  right: 35px;
+  bottom: 85px;
+  background-color: white;
+  color: #5553B7;
+  border: 5px solid #5553B7;
+  border-radius: 50%;
+  font-size: 40px;
+  z-index: 9;
+  scroll-behavior: smooth;
+}
+
+
+.body {
+  background-color: #f7f7f7;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+
+.profile-card {
+  width: 70%;
+  height: auto;
+  margin: 5% auto;
+  display: flex;
+  border-radius: 30px;
+
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+.left-side {
+  height: auto;
+  flex: 1 1;
+  background-color: #85C88A;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.welcome-msg {
+  padding: 5% 10% 2%;
+  color: white;
+}
+
+.name {
+  font-size: 2.5rem;
+  text-overflow: clip;
+}
+
+.profile-img {
+  object-fit: cover;
+  width: 20rem;
+  height: 25rem;
+  background-color: #fff;
+  border-bottom-right-radius: 100px;
+  border: 5px solid white;
+  margin-left: 35%;
+}
+
+
+
+.right-side {
+  flex: 2 1;
+}
+
+.info {
+  padding: 0 5% 3% 20%;
+}
+
+.profile-info {
+  text-align: center;
+  padding: 2.5rem 0;
+  margin-bottom: 0;
+}
+
+.details {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0;
+  padding-bottom: 0.5rem;
+}
+
+.details-ans {
+  font-weight: normal;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  text-overflow: ellipsis;
+}
+
+.edit-btn-anchor {
+  text-decoration: none;
+}
+
+.edit-btn {
+  display: block;
+  margin: 5rem auto 0;
+  padding: 0.5rem 3rem;
+}
+
+.edit-btn:hover {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+
+
+.medical-history {
+  width: 95%;
+  height: auto;
+  margin: 5% auto;
+  background-color: #EEEEEE;
+  border: 5px solid #F2F2F2;
+  border-radius: 30px;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.medical-history-heading {
+  text-align: center;
+  margin-top: 5%;
+  margin-bottom: 4%;
+}
+
+.appointments {
+  display: block;
+}
+
+.appointments-requests {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.table-scroll {
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+  height: 25.2rem;
+  overflow-x: auto;
+  overflow-y: scroll;
+  margin: 0 2%;
+}
+
+.appointments-table {
+  width: 100%;
+  background-color: #fff;
+}
+
+table {
+  border-collapse: collapse;
+ }
+
+td,
+th {
+  border: 3px solid #EEEEEE;
+  text-align: center;
+  height: 5rem;
+  width: 15rem;
+}
+
+.allergies-row {
+  height: 9rem;
+}
+
+.canecl-btn {
+  display: block;
+  margin: 5% auto;
+}
+
+.appointment-note {
+  margin-left: 2%;
+  margin-top: 1%;
+  color: red;
+}
+
+.upcoming-appointments {
+  margin-top: 5%;
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.information {
+  margin: 5% 0 5% 5%;
+}
+
+.information-heading {
+  margin-bottom: 2%;
+}
+
+.information-details {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+
+.vacc-site {
+  background-image: linear-gradient(to right, blue, blue 50%, #000 50%);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 5px 0;
+  position: relative;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.vacc-site:before {
+  content: '';
+  background: blue;
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.vacc-site:hover {
+  background-position: 0;
+}
+
+.vacc-site:hover::before {
+  width: 100%;
+}
+
+
+.user-medical-details-table {
+  width: 95%;
+  margin: 0% auto;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.user-medical-details {
+  margin: 5% 0;
+}
+
+.user-medical-details-heading {
+  margin-left: 5%;
+  margin-bottom: 3%;
+}
+
+.prescription-block,
+.reports-block {
+  margin-left: 2%;
+  margin-right: 2%;
+  margin-bottom: 5%;
+}
+
+.prescription-heading,
+.reports-heading {
+  margin-bottom: 3%;
+}
+
+.prescription-set,
+.reports-set {
+  white-space: nowrap;
+  overflow-x: scroll;
+  border: 3px solid #EEEEEE;
+  background-color: #fff;
+  box-shadow: rgb(0 0 0 / 29%) 0px 6px 18px 0px;
+}
+
+.prescription-card,
+.reports-card,
+.add-img-card {
+  display: inline-block;
+  width: 15rem;
+  height: 20rem;
+  margin: 2%;
+}
+
+.prescription-img,
+.reports-img,
+.add-img {
+  object-fit: cover;
+  border: 5px solid #EEEEEE;
+  width: 15rem;
+  height: 20rem;
+}
+
+
+.prescription-card:hover,
+.reports-card:hover,
+.prescription-img:hover,
+.reports-img:hover {
+  width: 30rem;
+  height: 35rem;
+  padding: 1rem;
+  transition-timing-function: ease-in;
+  transition-duration: 0.5s;
+}
+
+.image-upload>input {
+  display: none;
+}

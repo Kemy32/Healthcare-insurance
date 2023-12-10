@@ -1,0 +1,33 @@
+<div class="justify-content-center d-flex">
+  <div class="container d-flex">
+    <div class="form col">
+      <form class="text-center border-light p-5" [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <p class="h4 mb-4">Contact us</p>
+        <input type="text" formControlName="contactFormName" id="defaultContactFormName" mdbInput
+          class="form-control mb-4" placeholder="Name">
+        <input type="email" formControlName="contactFormEmail" id="defaultContactFormEmail" mdbInput
+          class="form-control mb-4" placeholder="E-mail">
+        <label class="subjectTxt">Subject:</label>
+        <select formControlName="contactFormSubjects" class="browser-default custom-select mb-4">
+          <option value="" disabled>Choose option</option>
+          <option value="1" selected>Feedback</option>
+          <option value="2">Report a bug</option>
+          <option value="3">Feature request</option>
+          <option value="4">Appointment Picking</option>
+        </select>
+        <div class="form-group">
+          <textarea formControlName="contactFormMessage" class="form-control rounded-0" mdbInput
+            id="exampleFormControlTextarea2" rows="3" placeholder="Message"></textarea>
+        </div>
+        <button pButton pRipple type="submit" label="Info"
+          class="sumbitBtn p-button-raised p-button-info z-depth-0 my-4 waves-effect" block="true" outline="true"
+          [disabled]="disabledSubmitButton"></button>
+        <!-- <button mdbBtn color="info" outline="true" block="true" class="z-depth-0 my-4 waves-effect" mdbWavesEffect
+          type="submit" [disabled]="disabledSubmitButton">Send</button> -->
+      </form>
+    </div>
+    <div class="cartImg col">
+      <img src="https://i.imgur.com/5zfRzVH.png" alt="" class="contactUsImg justify-content-center">
+    </div>
+  </div>
+</div>
